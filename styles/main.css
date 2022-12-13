@@ -1,0 +1,52 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+html{
+	font-size: 62.5%; /*1rem =10px ahora*/
+}
+.head__tittle{
+	
+	font-size: 4rem;
+	text-align: center;
+	padding: 1rem;
+}
+.calculadora{
+	border: 1px black solid;
+	margin: auto;
+	max-width: 60rem;
+}
+.calculadora__answer{
+	border: 1px black solid;
+	font-size: 3rem;
+	padding: 1rem;
+	text-align: right;
+	margin: 1rem;
+}
+.calculadora__ContainerNumbers{
+	margin: 1.5rem;
+	border: 1px black solid;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	
+
+}
+.calculadora__number{
+	min-height: 6rem;
+	min-width: 6rem;
+	max-height: 6rem;
+	max-width: 6rem;
+}
+/*a
+{
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+}
+.centrado
+{
+	max-width: 1200px;
+	margin: auto;
+}*/
