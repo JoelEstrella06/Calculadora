@@ -63,6 +63,9 @@ html{
 	border:0.1rem gray solid;
 	border-radius: 1.2rem;
 }
+.calculadora__number:disabled{
+	background-color: var(--blanco);
+}
 .calculadora__operations__btn{
 	background-color: #a59d9d;
 	color: var(--blanco);
