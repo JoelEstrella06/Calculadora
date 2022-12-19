@@ -3,7 +3,7 @@ const btnOperations = document.getElementById("containerOperations");
 const answer = document.getElementById("answer");
 const btFloat = document.getElementById("float");
 let boleanOperation=false;
-let indicateOperation="";
+let indicateOperation="-";
 let operation="";
 let cantDeg=0;
 btnnumbers.addEventListener('click',(e)=>{
@@ -60,9 +60,13 @@ btnOperations.addEventListener('click',(e)=>{
                     res=numbers[0]+numbers[1];
                     innerText(res);
                 }
-                //verificar los casos de resta
-                if(indicateOperation===""){
-                    res=numbers[0]-numbers[1];
+                if(indicateOperation==="-"){
+                    if(numbers[1]<0){
+                        res=numbers[0]-(numbers[1]*-1);
+                    }
+                    else{
+                        res=numbers[0]-numbers[1];
+                    }     
                     innerText(res);
                 }
                 if(indicateOperation==="x"){
