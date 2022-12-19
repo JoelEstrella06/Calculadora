@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Share+Tech+Mono&display=swap');
 :root{
 	--rojo:#da0000ee;
 	--blanco:#eeee;
 	--naranja:#e46a07; 
 	--verde:#9ABBAC;
+	--azul:#284fd1; 
 }
 *{
 	margin: 0px;
@@ -15,10 +15,26 @@ html{
 	font-size: 62.5%; /*1rem =10px ahora*/
 }
 .head__tittle{
-	
+	font-family: 'Poppins', sans-serif;
 	font-size: 4rem;
 	text-align: center;
 	padding: 1rem;
+}
+.head__help{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+    align-items: center;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+.head__help p{
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.5rem;
+}
+.head__help i{
+	font-size: 2.5rem;
+	color: var(--azul);
 }
 .calculadora{
 	background-color: #234F54;
